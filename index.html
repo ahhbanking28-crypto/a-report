@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل غياب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header> 
+        <h2>نموذج عذر غياب</h2>
+    </header>
+
+    <div class="content">
+        
+        <form onsubmit="sendEmail(); return false;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="8" r="4" stroke="black" stroke-width="2" />
+            <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="black" stroke-width="2" />
+        </svg>
+            <h2>نموذج عذر غياب</h2>
+
+            <input type="text" id="name" placeholder="اسمك" required><br><br>
+
+            <textarea id="reason" placeholder="سبب الغياب" required></textarea><br><br>
+
+            <button type="submit">إرسال</button>
+        </form>
+
+        <p id="msg" style="display:none; color:green;">
+            ✅ تم استلام طلبك، سنرد عليك خلال ساعة إن شاء الله
+        </p>
+
+    </div>
+<script>
+function sendEmail() {
+  let name = document.getElementById("name").value;
+  let reason = document.getElementById("reason").value;
+
+  window.location.href =
+    "ahhbanking28@gmail.com" +
+    "?subject=عذر غياب" +
+    "&body=الاسم: " + name + "%0Aسبب الغياب: " + reason;
+
+  document.getElementById("msg").style.display = "block";
+}
+</script>
+
+
+</body>
+
+
+</html>

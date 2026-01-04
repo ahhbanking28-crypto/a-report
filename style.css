@@ -1,0 +1,70 @@
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body{
+            background-color: black;
+        }
+        .content {
+            height: 100vh;
+            background: linear-gradient(red, black);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        form {
+            display: flex;
+            flex-flow: column wrap;
+            border: solid 1px white;
+            text-align: center;
+            color: white;
+            width: 300px;
+            padding: 10px;
+            height: auto;
+            direction: rtl;
+            border-radius: 20px;
+            margin-bottom: 50px;
+        }
+
+        header {
+            color: azure;
+            background-color: white;
+            color: red;
+            text-align: center;
+            border-radius: 0 0  10px 10px;
+            padding:6px 0;
+        }
+
+        form input {
+            border-radius: 10px;
+            padding: 10px;
+            border: brown;
+
+        }
+
+        form textarea {
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 50%;
+            margin: auto;
+            padding: 6px 0px;
+        }
+
+        form label {
+            font-size: larger;
+        }
+         svg{
+            text-align: center;
+            margin-right:7em ;
+        }
+   
